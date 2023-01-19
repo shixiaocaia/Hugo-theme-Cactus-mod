@@ -1,19 +1,9 @@
-# Hugo Example
+原主题为 [hugo-theme-cactus](https://github.com/monkeyWzr/hugo-theme-cactus)，这个仓库是在 [Mantyke](https://mantyke.icu/) 修改的魔改版在进行了如下的改动
 
-This directory is a brief example of a [Hugo](https://gohugo.io/) app that can be deployed to Vercel with zero configuration.
+- 引入了最新的waline。
+- 修改了标签的链接
+- 引入了 [shortcode - 豆瓣标签](https://shixiaocaia.fun/other/7aee45b6/#豆瓣标签)。
+- 调整了网页缩放。
+- 修改 tag 标签链接，避免 OSS 部署的错误。
 
-## Deploy Your Own
-
-Deploy your own Hugo project with Vercel.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/hugo&template=hugo)
-
-_Live Example: https://hugo-template.vercel.app_
-
-### How We Created This Example
-
-To get started with Hugo for deployment with Vercel, you can use the [Hugo CLI](https://gohugo.io/commands/) to initialize the project:
-
-```shell
-$ hugo new site project-name
-```
+...

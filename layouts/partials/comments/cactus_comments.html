@@ -1,5 +1,11 @@
 <head>
 {{ if not .Site.IsServer }}
+<script type="text/javascript" src="/js/activate-power-mode.js"></script>
+<script>  
+POWERMODE.colorful = true;
+POWERMODE.shake = false;
+document.body.addEventListener('input', POWERMODE);  
+</script>
 <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
 <div id="waline" class="waline-container"></div>
 {{- end -}}
@@ -48,7 +54,7 @@
 	
 	.wl-comment .wl-header {
     border-radius: 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px dashed #ddd;
 	}
 	
 	.wl-count {
@@ -63,7 +69,7 @@
        --waline-theme-color: #34495e; /*主题色，提交按钮*/
        --waline-active-color: #bababa; /*鼠标移到提交按钮上的颜色*/
        --waline-badge-color: #34495e; /*博主徽章色*/
-       --waline-border-color:transparent;
+       --waline-border-color: #ddd;
        --waline-avatar-size: 3rem;
        --waline-dark-grey: #34495e; /*ID颜色*/
 

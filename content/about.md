@@ -5,7 +5,7 @@ comment: true
 ---
 ## About me
 
-- 通信工程硕士~~在读~~，希望顺利毕业。
+- 通信工程硕士<span class ="hint"> <del class="text-gray-300">在读</del></span>，希望顺利毕业。
 - 在学习CS相关知识，希望能够从事后端开发。
 - *The Universe Responds To Your Frequency.*
 
@@ -55,3 +55,7 @@ comment: true
   rootDOM: document.getElementById('test')
 })
 </script>
+
+
+
+
