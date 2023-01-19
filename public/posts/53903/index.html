@@ -7,6 +7,9 @@
   <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <script type="text/javascript" src="/js/cactus.js"></script>
   <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> Hexo-AirCloud主题装修指南 | shixiaocaia</title>
@@ -31,7 +34,7 @@
     
   
   
-  <link rel="stylesheet" href="https://shixiaocaia.fun/css/styles.c1077e192dbb43d4f9a0078d204b3490c4ed599651dfd9cded5d590b95633bb66d90a621a73e9e164bfacd02e44dce5c74873dba58d713fe450229bec241c3fc.css" integrity="sha512-wQd&#43;GS27Q9T5oAeNIEs0kMTtWZZR39nN7V1ZC5VjO7ZtkKYhpz6eFkv6zQLkTc5cdIc9uljXE/5FAim&#43;wkHD/A=="> 
+  <link rel="stylesheet" href="https://shixiaocaia.fun/css/styles.76b8c4639322d767cc902217bd70ce6bb406de2aa4543fae1266977fb2e6059f4608f7a1e6ae85adc7c3b43ae407dc1280b66e22e7a1152a74d330a4c482b380.css" integrity="sha512-drjEY5Mi12fMkCIXvXDOa7QG3iqkVD&#43;uEmaXf7LmBZ9GCPeh5q6FrcfDtDrkB9wSgLZuIuehFSp00zCkxIKzgA=="> 
 
   
   
@@ -224,7 +227,7 @@
         
         <div class="article-read-time">
           <i class="fa fa-car"></i>
-          1433字
+          1333字
         </div>
         
         
@@ -249,10 +252,6 @@
     	
       <blockquote>
 <p>考完了矩阵论，正逢阴雨天，不去工位了，把这篇装修写了，希望能帮助到使用这个主题的大家，不知道为什么我添加谷歌收录没有成功，可能也没什么人能检索到这篇文章。</p>
-</blockquote>
-<p>&lt;&ndash;!more&ndash;&gt;</p>
-<blockquote>
-<p>此外，Aircloud主题相比其他完善的主题，有太多需要更改的地方，去使用的人也不会太多，但是开源免费的东西，希望大家还是友好点不要一味向作者伸手，自己改也有乐趣！都去参与才会有一个良好的社区氛围。</p>
 </blockquote>
 <h2 id="引入waline">引入Waline</h2>
 <p>参考<a href="https://waline.js.org/">waline官方文档</a>，在layout.ejs中引入以下代码：</p>
@@ -290,7 +289,11 @@
 </ul>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#666">&lt;</span>div id<span style="color:#666">=</span><span style="color:#4070a0">&#34;waline_thread&#34;</span><span style="color:#666">&gt;&lt;</span><span style="">/div&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#666">&lt;</span>div id<span style="color:#666">=</span><span style="color:#4070a0">&#34;waline&#34;</span><span style="color:#666">&gt;&lt;</span><span style="">/div&gt;</span>
-</span></span></code></pre></div><p><img src="https://bu.dusays.com/2022/12/24/63a6b5e2a725d.png" alt="TinySnap-2022-11-17-13.39.24"></p>
+</span></span></code></pre></div><p><div class="post-img-view">
+<a data-fancybox="gallery" href="https://bu.dusays.com/2022/12/24/63a6b5e2a725d.png">
+<img src="https://bu.dusays.com/2022/12/24/63a6b5e2a725d.png" alt="TinySnap-2022-11-17-13.39.24"  />
+</a>
+</div></p>
 <h2 id="插件">插件</h2>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>npm i hexo-slug
 </span></span><span style="display:flex;"><span>npm i hexo-generator-feed
@@ -378,7 +381,11 @@
 </span></span><span style="display:flex;"><span>setInterval<span style="color:#666">(</span><span style="color:#4070a0">&#34;createtime()&#34;</span>,250<span style="color:#666">)</span>;
 </span></span><span style="display:flex;"><span>&lt;/script&gt;
 </span></span><span style="display:flex;"><span>&lt;script async <span style="color:#bb60d5">src</span><span style="color:#666">=</span><span style="color:#4070a0">&#34;https://npm.elemecdn.com/penndu@1.0.0/bsz.js&#34;</span>&gt;&lt;/script&gt;
-</span></span></code></pre></div><p><img src="https://bu.dusays.com/2022/12/24/63a6b5e6eb871.png" alt="TinySnap-2022-11-19-20.21.10"></p>
+</span></span></code></pre></div><p><div class="post-img-view">
+<a data-fancybox="gallery" href="https://bu.dusays.com/2022/12/24/63a6b5e6eb871.png">
+<img src="https://bu.dusays.com/2022/12/24/63a6b5e6eb871.png" alt="TinySnap-2022-11-19-20.21.10"  />
+</a>
+</div></p>
 <h2 id="图片居中">图片居中</h2>
 <p>原来的图片显示是偏左的，当你的图片过小时，显得很奇怪。</p>
 <p>修改<code>aircloud.css</code>中的</p>
@@ -744,7 +751,7 @@ document.body.addEventListener('input', POWERMODE);
        
        <a href="https://github.com/shixiaocaia/Hugo-theme-Cactus-mod">Hugo-Cactus </a>|<a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral">又拍云</a> | <a href="https://shixiaocaia.fun/index.xml">RSS </a>| <a href="https://docsify.shixiaocaia.fun/">Docsify </a> | <a href="https://beian.miit.gov.cn/">苏ICP备2022036708号-1 </a><br>
        <a id="copyright"></a> shixiaocaia · <a id="days"></a> Days ·
-     共书写了39k字 ·  34 篇文章</br><span>
+     共书写了39.1k字 ·  34 篇文章</br><span>
    </section>
 
    <script>
@@ -781,6 +788,7 @@ document.body.addEventListener('input', POWERMODE);
 <script src=/js/main.js></script>
 
 <script src=/js/code-copy.js></script>
+
 
 
 

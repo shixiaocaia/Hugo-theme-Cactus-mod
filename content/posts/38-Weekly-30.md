@@ -19,11 +19,13 @@ slug: 7d95c632
 - 修改页脚，把原来的页脚信息迁移到这里。
 - 修改[标签墙](https://shixiaocaia.fun/about/)，贴上自己的标签。
 - 修改[首页图片](https://shixiaocaia.fun/)，需要注意裁剪成合适的大小。
-- 引入了[shortcode-豆瓣标签](https://shixiaocaia.fun/other/7aee45b6/#%E8%B1%86%E7%93%A3%E6%A0%87%E7%AD%BE)，不得不说Hugo的shortcode真的好用。
+- 引入了[shortcode-豆瓣标签](https://shixiaocaia.fun/posts/7aee45b6/#%E8%B1%86%E7%93%A3%E6%A0%87%E7%AD%BE)，不得不说Hugo的shortcode真的好用。
 - 调整了网页缩放。
 - 修改tag标签链接，避免OSS部署的错误。
 - 引入了[Memos](https://shixiaocaia.fun/memos/)，来自[木木木木木](https://immmmm.com/hi-memos/)，采用的是白嫖Railway部署。
 - 跟着原主题的教程，爬取了豆瓣书影信息，修改了[书/影墙](https://shixiaocaia.fun/movies/)。
+- 引入了[fancybox](https://atpx.com/hugo-fancybox/)支持图片缩放了。
+- 对很多细节的CSS进行了调整。
 
 ## 小小感叹下
 

@@ -34,6 +34,7 @@ slug: links
 |[CS自学指南](https://csdiy.wiki/)| 快乐学习CS|
 |[个站商店](https://storeweb.cn/)| 个人博客收录网站 |
 |[全网漫游指南](https://tagly.notion.site/a333efd8c3e54e12b123acd541e8d3e6)| 探索浩瀚的数字海洋 |
+|[HelloGithub](https://hellogithub.com/)| 拥抱开源 |
 
 ## 我的友链信息
 

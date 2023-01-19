@@ -7,6 +7,9 @@
   <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <script type="text/javascript" src="/js/cactus.js"></script>
   <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> 与内容农场抗争 | shixiaocaia</title>
@@ -31,7 +34,7 @@
     
   
   
-  <link rel="stylesheet" href="https://shixiaocaia.fun/css/styles.c1077e192dbb43d4f9a0078d204b3490c4ed599651dfd9cded5d590b95633bb66d90a621a73e9e164bfacd02e44dce5c74873dba58d713fe450229bec241c3fc.css" integrity="sha512-wQd&#43;GS27Q9T5oAeNIEs0kMTtWZZR39nN7V1ZC5VjO7ZtkKYhpz6eFkv6zQLkTc5cdIc9uljXE/5FAim&#43;wkHD/A=="> 
+  <link rel="stylesheet" href="https://shixiaocaia.fun/css/styles.76b8c4639322d767cc902217bd70ce6bb406de2aa4543fae1266977fb2e6059f4608f7a1e6ae85adc7c3b43ae407dc1280b66e22e7a1152a74d330a4c482b380.css" integrity="sha512-drjEY5Mi12fMkCIXvXDOa7QG3iqkVD&#43;uEmaXf7LmBZ9GCPeh5q6FrcfDtDrkB9wSgLZuIuehFSp00zCkxIKzgA=="> 
 
   
   
@@ -244,18 +247,30 @@
       <h2 id="检索体验">检索体验</h2>
 <p>现在互联网很大程度上肆意读取我们的信息，给我们推荐广告，推荐“你喜欢的”，变成最懂你的“人“，NLP等人工智能技术人们研究后，又以这样的方式反馈在普通大众上，有一些可笑的。</p>
 <p>现在就算是通过科学方式，使用谷歌搜索，也无法最大化获取有效信息了，大量的内容农场涌入，当你检索一个信息时，映入眼帘的全是下图所示的内容农场，血压直接上来了。</p>
-<p><img src="https://bu.dusays.com/2022/12/24/63a6b6033fda3.jpeg" alt=""></p>
+<p><div class="post-img-view">
+<a data-fancybox="gallery" href="https://bu.dusays.com/2022/12/24/63a6b6033fda3.jpeg">
+<img src="https://bu.dusays.com/2022/12/24/63a6b6033fda3.jpeg" alt=""  />
+</a>
+</div></p>
 <p>也不是引战，国内的中文互联网环境就是这样，为了流量利益，引出这么多搬运的站点，在谷歌、百度等搜索站点上，还能获得极大的权重排名，普通人能做什么呢。当你打开前列的排名，不同的内容站点转发相同的信息，血压一下子上来了。</p>
 <p>下面提供几种我常用的插件，优化一些搜索体验，具体也可以看看少数派去年的这篇<a href="https://sspai.com/post/69407">推文</a>。</p>
 <h2 id="tampermonkey"><strong>Tampermonkey</strong></h2>
 <p>油猴是在谷歌、edge等浏览器可以使用的脚本管理插件，这里就不提供下载安装方式了，不通过科学的方法，还是可以得到的。最简单的是通过谷歌和Edge的扩展商店获取。</p>
 <h2 id="搜索优化">搜索优化</h2>
 <h3 id="ac-baidu">AC-baidu</h3>
-<p><img src="https://bu.dusays.com/2022/12/24/63a6b607bd19a.png" alt=""></p>
+<p><div class="post-img-view">
+<a data-fancybox="gallery" href="https://bu.dusays.com/2022/12/24/63a6b607bd19a.png">
+<img src="https://bu.dusays.com/2022/12/24/63a6b607bd19a.png" alt=""  />
+</a>
+</div></p>
 <p>通过AC-baidu可以对谷歌、百度等常见的搜索进行一定的筛选。其中的单列居中，护眼等功能都十分友好，根据上面的配置，可以勾选相应的功能。</p>
 <p>通过此脚本可以对百度的界面进行优化，单列去除右侧的热搜等信息，也可以通过标题一旁的block按钮屏蔽一些内容农场的站点。</p>
 <p>最终设置完的效果如下：</p>
-<p><img src="http://pic.shixiaocaia.fun/202210050908138.png" alt=""></p>
+<p><div class="post-img-view">
+<a data-fancybox="gallery" href="http://pic.shixiaocaia.fun/202210050908138.png">
+<img src="http://pic.shixiaocaia.fun/202210050908138.png" alt=""  />
+</a>
+</div></p>
 <h3 id="ublacklist--google-hit-hider-by-domain">uBlacklist + Google Hit Hider by Domain</h3>
 <p>搭配享用更加，具体的步骤可以看到<a href="https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist">Github</a>原文的链接内容。</p>
 <p>原文的 精确匹配、模糊匹配的链接请使用Github仓库的源文件引入。</p>
@@ -264,7 +279,11 @@
 <p>当我们检索一些知识点时，国内的话CSDN、知乎排列优先级挺靠前的，但是现如今内容不谈，光是广告等信息就是一堆。为了抗衡又找了相应的脚本。</p>
 <p>此类的脚本也有很多，大家可以在油猴中检索几个使用。可以对CSDN的登录弹窗，整体界面进行极大的优化。我使用的是 Adler的。</p>
 <p>最终设置完的效果如下：</p>
-<p><img src="https://bu.dusays.com/2022/12/24/63a6b60af08ea.png" alt=""></p>
+<p><div class="post-img-view">
+<a data-fancybox="gallery" href="https://bu.dusays.com/2022/12/24/63a6b60af08ea.png">
+<img src="https://bu.dusays.com/2022/12/24/63a6b60af08ea.png" alt=""  />
+</a>
+</div></p>
 
       <br><br><br>
     </div>
@@ -610,7 +629,7 @@ document.body.addEventListener('input', POWERMODE);
        
        <a href="https://github.com/shixiaocaia/Hugo-theme-Cactus-mod">Hugo-Cactus </a>|<a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral">又拍云</a> | <a href="https://shixiaocaia.fun/index.xml">RSS </a>| <a href="https://docsify.shixiaocaia.fun/">Docsify </a> | <a href="https://beian.miit.gov.cn/">苏ICP备2022036708号-1 </a><br>
        <a id="copyright"></a> shixiaocaia · <a id="days"></a> Days ·
-     共书写了39k字 ·  34 篇文章</br><span>
+     共书写了39.1k字 ·  34 篇文章</br><span>
    </section>
 
    <script>
@@ -647,6 +666,7 @@ document.body.addEventListener('input', POWERMODE);
 <script src=/js/main.js></script>
 
 <script src=/js/code-copy.js></script>
+
 
 
 
