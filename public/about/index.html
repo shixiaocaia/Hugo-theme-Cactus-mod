@@ -16,7 +16,7 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta property="og:title" content="About" />
-<meta property="og:description" content="About me 这里是小菜的个人博客，用于记录每周与自己的对话，各类胡思乱想，倒腾东东。 近况：目前水(指自己水)硕在读，希望顺利毕业。 友链 欢迎在任意文章" />
+<meta property="og:description" content="About me 通信工程硕士在读，希望顺利毕业。 在学习CS相关知识，希望能够从事后端开发。 The Universe Responds To Your Frequency." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://shixiaocaia.fun/about/" /><meta property="article:section" content="" />
 <meta property="article:published_time" content="2022-06-04T17:51:42+00:00" />
@@ -24,7 +24,7 @@
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="About"/>
-<meta name="twitter:description" content="About me 这里是小菜的个人博客，用于记录每周与自己的对话，各类胡思乱想，倒腾东东。 近况：目前水(指自己水)硕在读，希望顺利毕业。 友链 欢迎在任意文章"/>
+<meta name="twitter:description" content="About me 通信工程硕士在读，希望顺利毕业。 在学习CS相关知识，希望能够从事后端开发。 The Universe Responds To Your Frequency."/>
 
   
   
@@ -114,8 +114,11 @@
   <div class="content" itemprop="articleBody">
   
     <h2 id="about-me">About me</h2>
-<p>这里是小菜的个人博客，用于记录每周与自己的对话，各类胡思乱想，倒腾东东。</p>
-<p>近况：目前水(指自己水)硕在读，希望顺利毕业。</p>
+<ul>
+<li>通信工程硕士<del>在读</del>，希望顺利毕业。</li>
+<li>在学习CS相关知识，希望能够从事后端开发。</li>
+<li><em>The Universe Responds To Your Frequency.</em></li>
+</ul>
 <style>
     #test {
         width: auto;
@@ -161,30 +164,6 @@
   rootDOM: document.getElementById('test')
 })
 </script>
-<h2 id="友链">友链</h2>
-<p>欢迎在任意文章下评论添加友链，希望你也是一个热爱生活的人，希望你已建站一段时间有一定内容，我会经常拜访的，如果才开始希望你能坚持下去而不是一时兴起~</p>
-<details class="accordion rounded  border dark:border-darkBorder" >
-    <summary class="flex items-center px-4 py-2 font-bold before:mr-0.5 before:-mt-0.5 before:text-xl before:text-gray-400">我的友链信息</summary>
-    <div class="border-t px-4 py-2  dark:border-darkBorder"><ul>
-<li>
-<p>title: <code>Shixiaocaia </code></p>
-</li>
-<li>
-<p>url: <code>https://shixiaocaia.fun </code></p>
-</li>
-<li>
-<p>avatar: <code>https://bu.dusays.com/2022/12/25/63a806f74cf5e.jpg</code></p>
-</li>
-<li>
-<p>description: <code>去做吧，反正都会后悔。</code></p>
-</li>
-</ul>
-</div>
-</details>
-
-<div align="center">
-<p><a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?lines=Stay+hungry%2C+Stay+foolish.;%E6%84%BF%E4%BA%BA%E4%B8%8E%E4%BA%BA%E9%83%BD%E8%83%BD%E5%A4%9F%E7%9C%9F%E8%AF%9A%E6%B2%9F%E9%80%9A%E3%80%82" alt="Typing SVG"></a></p>
-</div>
 
   
   <br>
@@ -206,19 +185,60 @@
       <head>
 
 <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css"/></head>
+<div id="waline" class="waline-container"></div></head>
 <div id="waline"></div>
- <style>
-   .waline-container {
-       background-color: var(--card-background);
-       border-radius: var(--card-border-radius);
-       box-shadow: var(--shadow-l1);
-       padding: 1%;  
+<script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
 
-   }
+    init({
+      el: '#waline',
+      comment: false,
+      serverURL: 'https://waline.shixiaocaia.fun/',
+      emoji: [
+          '/img/blobs-png/',
+      ],
+    });
+</script>
+ <style>
    .waline-container .vcount {
        color: var(--card-text-color-main);
    }
+   
+   .wl-card-item {
+    position: relative;
+    display: flex;
+    padding: 0.1em;
+	}
+	
+	.wl-card {
+    flex: 1;
+    width: 0;
+    padding-bottom: 0.1em;
+    border-bottom: 1px dashed var(--waline-border-color);
+	}
+	
+	.wl-editor {
+    position: relative;
+    width: calc(100% - 1em);
+    min-height: 4.75em;
+    margin: 0.75em 0.5em;
+    border-radius: 0.5em;
+    background: rgba(0,0,0,0);
+    font-size: .875em;
+    resize: vertical;
+	}
+	
+	.wl-comment .wl-header {
+    border-radius: 0;
+    border-bottom: 1px solid #ddd;
+	}
+	
+	.wl-count {
+    flex: 1;
+    font-weight: bold;
+    font-size: 0.8em;
+	}
+	
 
     
    :root{
@@ -274,18 +294,7 @@
 
    }
 </style>
-<script type="module">
-    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
 
-    init({
-      el: '#waline',
-      comment: false,
-      serverURL: 'https://waline.shixiaocaia.fun/',
-      emoji: [
-          '/img/blobs-png/',
-      ],
-    });
-  </script>
 
 
 

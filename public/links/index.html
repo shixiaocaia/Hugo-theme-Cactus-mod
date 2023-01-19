@@ -198,6 +198,10 @@
 <td><a href="https://mantyke.icu/">小球飞鱼</a></td>
 <td>我们会一起遇见鲸鱼吗？</td>
 </tr>
+<tr>
+<td><a href="https://immmmm.com/">木木木木木</a></td>
+<td>博客大佬！</td>
+</tr>
 </tbody>
 </table>
 <h2 id="开源社区">开源社区</h2>
@@ -223,6 +227,22 @@
 </tr>
 </tbody>
 </table>
+<h2 id="我的友链信息">我的友链信息</h2>
+<p>欢迎评论添加友链，希望你也是一个热爱生活的人，已建站一段时间、有一定内容，如果才开始希望你能坚持下去，而不是一时兴起~</p>
+<ul>
+<li>
+<p>title: <code>Shixiaocaia </code></p>
+</li>
+<li>
+<p>url: <code>https://shixiaocaia.fun </code></p>
+</li>
+<li>
+<p>avatar: <code>https://bu.dusays.com/2022/12/25/63a806f74cf5e.jpg</code></p>
+</li>
+<li>
+<p>description: <code>去做吧，反正都会后悔。</code></p>
+</li>
+</ul>
 
   
   <br>
@@ -244,19 +264,60 @@
       <head>
 
 <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css"/></head>
+<div id="waline" class="waline-container"></div></head>
 <div id="waline"></div>
- <style>
-   .waline-container {
-       background-color: var(--card-background);
-       border-radius: var(--card-border-radius);
-       box-shadow: var(--shadow-l1);
-       padding: 1%;  
+<script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
 
-   }
+    init({
+      el: '#waline',
+      comment: false,
+      serverURL: 'https://waline.shixiaocaia.fun/',
+      emoji: [
+          '/img/blobs-png/',
+      ],
+    });
+</script>
+ <style>
    .waline-container .vcount {
        color: var(--card-text-color-main);
    }
+   
+   .wl-card-item {
+    position: relative;
+    display: flex;
+    padding: 0.1em;
+	}
+	
+	.wl-card {
+    flex: 1;
+    width: 0;
+    padding-bottom: 0.1em;
+    border-bottom: 1px dashed var(--waline-border-color);
+	}
+	
+	.wl-editor {
+    position: relative;
+    width: calc(100% - 1em);
+    min-height: 4.75em;
+    margin: 0.75em 0.5em;
+    border-radius: 0.5em;
+    background: rgba(0,0,0,0);
+    font-size: .875em;
+    resize: vertical;
+	}
+	
+	.wl-comment .wl-header {
+    border-radius: 0;
+    border-bottom: 1px solid #ddd;
+	}
+	
+	.wl-count {
+    flex: 1;
+    font-weight: bold;
+    font-size: 0.8em;
+	}
+	
 
     
    :root{
@@ -312,18 +373,7 @@
 
    }
 </style>
-<script type="module">
-    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
 
-    init({
-      el: '#waline',
-      comment: false,
-      serverURL: 'https://waline.shixiaocaia.fun/',
-      emoji: [
-          '/img/blobs-png/',
-      ],
-    });
-  </script>
 
 
 

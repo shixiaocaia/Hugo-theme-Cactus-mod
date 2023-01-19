@@ -268,19 +268,60 @@
       <head>
 
 <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css"/></head>
+<div id="waline" class="waline-container"></div></head>
 <div id="waline"></div>
- <style>
-   .waline-container {
-       background-color: var(--card-background);
-       border-radius: var(--card-border-radius);
-       box-shadow: var(--shadow-l1);
-       padding: 1%;  
+<script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
 
-   }
+    init({
+      el: '#waline',
+      comment: false,
+      serverURL: 'https://waline.shixiaocaia.fun/',
+      emoji: [
+          '/img/blobs-png/',
+      ],
+    });
+</script>
+ <style>
    .waline-container .vcount {
        color: var(--card-text-color-main);
    }
+   
+   .wl-card-item {
+    position: relative;
+    display: flex;
+    padding: 0.1em;
+	}
+	
+	.wl-card {
+    flex: 1;
+    width: 0;
+    padding-bottom: 0.1em;
+    border-bottom: 1px dashed var(--waline-border-color);
+	}
+	
+	.wl-editor {
+    position: relative;
+    width: calc(100% - 1em);
+    min-height: 4.75em;
+    margin: 0.75em 0.5em;
+    border-radius: 0.5em;
+    background: rgba(0,0,0,0);
+    font-size: .875em;
+    resize: vertical;
+	}
+	
+	.wl-comment .wl-header {
+    border-radius: 0;
+    border-bottom: 1px solid #ddd;
+	}
+	
+	.wl-count {
+    flex: 1;
+    font-weight: bold;
+    font-size: 0.8em;
+	}
+	
 
     
    :root{
@@ -336,18 +377,7 @@
 
    }
 </style>
-<script type="module">
-    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
 
-    init({
-      el: '#waline',
-      comment: false,
-      serverURL: 'https://waline.shixiaocaia.fun/',
-      emoji: [
-          '/img/blobs-png/',
-      ],
-    });
-  </script>
 
 
 
