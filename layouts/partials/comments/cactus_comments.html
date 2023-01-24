@@ -1,15 +1,10 @@
 <head>
 {{ if not .Site.IsServer }}
-<script type="text/javascript" src="/js/activate-power-mode.js"></script>
-<script>  
-POWERMODE.colorful = true;
-POWERMODE.shake = false;
-document.body.addEventListener('input', POWERMODE);  
-</script>
 <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
 <div id="waline" class="waline-container"></div>
 {{- end -}}
 </head>
+{{ if not .Site.IsServer }}
 <div id="waline"></div>
 <script type="module">
     import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
@@ -119,7 +114,7 @@ document.body.addEventListener('input', POWERMODE);
    }
 </style>
 
-
+{{- end -}}
 
 
 </body>

@@ -4,6 +4,7 @@ date: 2023-01-08T20:36:55+08:00
 description: 倒腾新主题，白嫖Railway部署memos。
 tags:
   - 闲话长说
+  - 博客
 slug: 7d95c632
 ---
 
