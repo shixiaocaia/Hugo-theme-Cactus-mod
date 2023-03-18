@@ -1,0 +1,80 @@
+{{ define "main" }}
+<meta name="referrer" content="no-referrer">
+<div class="post">
+  <style>
+.gallery-photos{width:100%;}
+.gallery-photo{width:24.9%;position: relative;visibility: hidden;overflow: hidden;}
+.gallery-photo.visible{visibility: visible;animation: fadeIn 2s;}
+.gallery-photo img{display: block;width:100%;border-radius:0;padding:4px;animation: fadeIn 1s;cursor: pointer;transition: all .4s ease-in-out;}
+.gallery-photo span.photo-title,.gallery-photo span.photo-time{background: rgba(0, 0, 0, 0.3);padding:0px 8px;font-size:0.9rem;color: #fff;display:none;animation: fadeIn 1s;}
+.gallery-photo span.photo-title{position:absolute;bottom:4px;left:4px;}
+.gallery-photo span.photo-time{position:absolute;top:4px;left:4px;font-size:0.8rem;}
+.gallery-photo:hover span.photo-title{display:block;}
+.gallery-photo:hover img{transform: scale(1.1);}
+@media screen and (max-width: 1800px) {
+	.gallery-photo{width:33.3%;}
+}
+@media screen and (max-width: 860px) {
+	.gallery-photo{width:49.9%;}
+}
+@keyframes fadeIn{
+	0% {opacity: 0;}
+   100% {opacity: 1;}
+}
+  </style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="https://immmmm.com/waterfall.min.js"></script>
+<script src="https://immmmm.com/imgStatus.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  //外链 gallery 标签相册瀑布流
+  var photosAll = document.getElementsByTagName('gallery') || '';
+  if(photosAll){
+    for(var i=0;i < photosAll.length;i++){
+      photosAll[i].innerHTML = '<div class="gallery-photos">'+photosAll[i].innerHTML+'</div>'
+	  
+      var photosIMG = photosAll[i].getElementsByTagName('img')
+      for(var j=0;j < photosIMG.length;j++){
+        wrap(photosIMG[j], document.createElement('div'));
+      }
+    }
+  }
+  function wrap(el, wrapper) {
+    wrapper.className = "gallery-photo";
+    el.parentNode.insertBefore(wrapper, el);
+    wrapper.appendChild(el);
+  }
+  //相册瀑布流
+  let galleryPhotos = document.querySelectorAll('.gallery-photos') || ''
+  if(galleryPhotos){
+    imgStatus.watch('.gallery-photo img', function(imgs) {
+      if(imgs.isDone()){
+        for(var i=0;i < galleryPhotos.length;i++){
+          waterfall(galleryPhotos[i]);
+          let pagePhoto = galleryPhotos[i].querySelectorAll('.gallery-photo');
+          for(var j=0;j < pagePhoto.length;j++){pagePhoto[j].className += " visible"};
+		  for(var j=0;j < pagePhoto.length;j++){pagePhoto[j].className += " gallery"};
+        }
+      }
+    });
+    window.addEventListener('resize', function () {
+      for(var i=0;i < galleryPhotos.length;i++){
+        waterfall(galleryPhotos[i]);
+      }
+    });
+  }
+});
+</script>
+<h2 class="post-title">天空</h2>
+<gallery>
+    <img src="https://bu.dusays.com/2023/01/06/63b81b782267b.jpg">
+    <img src="https://bu.dusays.com/2023/01/01/63b18557f1923.jpg">
+    <img src="https://bu.dusays.com/2023/01/01/63b185608f7d6.jpg">
+	<img src="https://bu.dusays.com/2023/01/01/63b18543b962b.jpg">
+	<img src="https://bu.dusays.com/2022/12/24/63a6b642016b2.jpeg">
+</gallery>
+</div>
+<script src={{ "lib/jquery/jquery.min.js" | relURL }}></script>
+<script src={{ "js/main.js" | relURL }}></script>
+{{ end }}

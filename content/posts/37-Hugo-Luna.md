@@ -111,9 +111,7 @@ pause
 
 ## 豆瓣标签
 
-{{< douban src="https://book.douban.com/subject/36089534/" >}}
-
-{{< douban src="https://movie.douban.com/subject/35275350/" >}}
+> API不能直接用了，找机会更新其他方法。
 
 在`layouts\shortcodes`里新建`douban.html`，并贴入以下code:
 

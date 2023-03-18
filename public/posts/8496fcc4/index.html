@@ -8,6 +8,12 @@
   <script type="text/javascript" src="/js/cactus.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="/js/activate-power-mode.js"></script>
+  <script>  
+	POWERMODE.colorful = true;
+	POWERMODE.shake = false;
+	document.body.addEventListener('input', POWERMODE);  
+  </script>
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,7 +39,7 @@
     
   
   
-  <link rel="stylesheet" href="https://shixiaocaia.fun/css/styles.5981a82be0f7c41b87d23a9b98b2cda6d803411694e3e893b30992bee63bab02c8b9008bbc4e84a099f903a5c11e81273718491bc0c078e16163e85d2db62d21.css" integrity="sha512-WYGoK&#43;D3xBuH0jqbmLLNptgDQRaU4&#43;iTswmSvuY7qwLIuQCLvE6EoJn5A6XBHoEnNxhJG8DAeOFhY&#43;hdLbYtIQ=="> 
+  <link rel="stylesheet" href="https://shixiaocaia.fun/css/styles.76b8c4639322d767cc902217bd70ce6bb406de2aa4543fae1266977fb2e6059f4608f7a1e6ae85adc7c3b43ae407dc1280b66e22e7a1152a74d330a4c482b380.css" integrity="sha512-drjEY5Mi12fMkCIXvXDOa7QG3iqkVD&#43;uEmaXf7LmBZ9GCPeh5q6FrcfDtDrkB9wSgLZuIuehFSp00zCkxIKzgA=="> 
 
   
   
@@ -105,6 +111,12 @@
           </a>
         </li>
         
+        
+        <li>
+          <a class="icon" href="https://shixiaocaia.fun/posts/f6106861/" aria-label="Next">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
         
         <li>
           <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
@@ -212,7 +224,7 @@
         
         <div class="article-read-time">
           <i class="fa fa-car"></i>
-          1837字
+          1831字
         </div>
         
         
@@ -294,665 +306,12 @@
 <p>上完课前，“节假日，我要完成XXX项计划，过个充实的假期！”</p>
 <p>正式放假，每天只能维持三四小时学习，有时候更短。</p>
 <p>毕竟快过年了，放过自己！</p>
-<hr>
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-    <title></title>
-    <style>
-        .post-preview {
-            max-width: 780px;
-            height: 200px;
-            margin: 1em auto;
-            position: relative;
-            display: flex;
-             
-            background: var(--entry);
-            border-radius: 15px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, .25), 0 0 2px rgba(0, 0, 0, .25);
-        }
-
-        .dark .post-preview {
-             
-            background: var(--entry);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, .5), 0 0 2px rgba(0, 0, 0, .5);
-        }
-
-        .post-preview--meta {
-            width: 80%;
-            padding: 23px;
-            overflow: hidden;
-        }
-
-        .post-preview--middle {
-            line-height: 28px;
-        }
-
-        .post-preview--title {
-            font-size: 20px;
-            margin: 0 !important;
-        }
-
-        .post-preview--title a {
-            text-decoration: none;
-        }
-
-        .post-preview--date {
-            font-size: 12px;
-            color: #999;
-        }
-
-        .post-preview--excerpt {
-            font-size: 14px;
-            line-height: 1.825;
-        }
-
-        .post-preview--excerpt p {
-            display: hidden;
-            margin: 0;
-			line-height: 1.825;
-        }
-
-        .post-preview--image {
-            height: 200px !important;
-            width: 25% !important;
-            float: right;
-            border-radius: 0 15px 15px 0;
-			margin-top: 0rem !important;
-        }
-
-        .post-preview img {
-            margin: unset;
-            width: 20%;
-            border-radius: 0 15px 15px 0;
-        }
-
-        @media (max-width: 550px) {
-            .post-preview {
-                width: 95%;
-            }
-
-            .post-preview--excerpt {
-                display: none;
-            }
-
-            .post-preview--middle {
-                line-height: 19px;
-            }
-        }
-
-        .rating {
-            display: block;
-            line-height: 15px;
-        }
-
-        .rating-star {
-            display: inline-block;
-            width: 75px;
-            height: 15px;
-            background-repeat: no-repeat;
-            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAClCAYAAAAUAAAYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA5xJREFUeNrs3T9rFEEcxvG7qEQIglaCICKkin9AUEtBKxU7wS61VlYivgWj70TtNFj5BqzE7qxEWwsxKIoYn4UtluFmbm8nczvzm+/BjxyuDwNzu3uXD0+46f7LC5PA45Hm+WTYw1x2LRDc0jzTXB+wqMlsaLPutz8fDFjYZHYauAz3NBvt83XNnyUWNpn1nVm3OsHmsb3EomazzZnVXKMPNcc0xzUnNKc0Rzv/77fms+Z7O3vt9b1eU7bZrNN68l5zcolX4ofmsuZXTdnmMvyi2dR86Bmcac62P6vKrnVubpc0bxYE32nOab45N8YqsvPeDfcD4SOav4HjprPuu+H5BTt9LXDMfNbdLPfT678Fx6vKupt1o/O8+R3pkOaJ5/iktqx7z/qp+aq5q/nY+fczmheaK03Gs7D5rLtZdzSvA6/Ebc2u55j57HQB0TzW7AzkjiKzny6+2hlKNE8juMNcFqKBaIZndRlCNBBNgmx7ZkE0fbLtZkE0EA1EM17WuQwhGogGooFoss6296y52cNO+J6HLJoPaFdbsvA9zGerIxrPh85eWYgGooFoDiQbuAxp0UA0EVmdWbRo+ma1WbRoIBqIZtzsnHdDWjQQDUQD0WSbde5ZS2UhmtqJJtSEiVkXooFoIJre2VATJmZdiKZ2ogk1YSb8oVMvDeUPnSAaiCaPJkzMuhANRAPRQDQpsqEmTMy6EI11oolpwkA0EA1EcyDZmCYMRAPR+LMxTZjqiCamCQPRQDQQzehNGIgGooFoIJpVZ2OaMBBN7USTqgkD0UA0EE3vbKomDERTO9GkasKYJJpUTRiIBqKBaEZvwkA0EA1EA9GkyKZqwkA01olmrCYMRAPRQDR9LkO+0QmiKbAJUyTRjNWEgWggGohm9CYMRAPRQDQQzZDsWE0YiMYC0eTYhIFoIJrKiCbHJgxEY4FocmzCZEs0OTZhIBqIpjKiybEJA9FANBANROPL5tiEgWhKIJoSmzAQDURjjGhKbMJANCUQTYlNmNGIpsQmDEQD0RgjmhKbMBANRAPR1Es0JTZhIJpciMZaEwaigWgKJBprTRiIJheisdaESUo01powEA1EUyDRWGvCQDQQDURjm2isNWEgmlURzWw2q4pZIBqIJkOiCVyGJpkFolkV0ejMMvel28mIRptl7ku3IRqIpjCimfNuaJpZIBqIBqIpm2ice5Z5ZonJupvVkMRu4JW4qXnrOWY++1+AAQBw9BJSCTeN9wAAAABJRU5ErkJggg==);
-            overflow: hidden;
-        }
-
-        .allstar10 {
-            background-position: 0px 0px;
-        }
-
-        .allstar9 {
-            background-position: 0px -15px;
-        }
-
-        .allstar8 {
-            background-position: 0px -30px;
-        }
-
-        .allstar7 {
-            background-position: 0px -45px;
-        }
-
-        .allstar6 {
-            background-position: 0px -60px;
-        }
-
-        .allstar5 {
-            background-position: 0px -75px;
-        }
-
-        .allstar4 {
-            background-position: 0px -90px;
-        }
-
-        .allstar3 {
-            background-position: 0px -105px;
-        }
-
-        .allstar2 {
-            background-position: 0px -120px;
-        }
-
-        .allstar1 {
-            background-position: 0px -135px;
-        }
-
-        .allstar0 {
-            background-position: 0px -150px;
-        }
-
-
-        .rating-average {
-            color: #777;
-            display: inline-block;
-            font-size: 13px;
-            margin-left: 10px;
-        }
-    </style>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.douban_item').each(function () {
-                var _this = $(this);
-                var strs = _this.attr('urlstring').toString();
-                var db_reg = /^https\:\/\/(movie|book)\.douban\.com\/subject\/([0-9]+)\/?/;
-                if (db_reg.test(strs)) {
-                    var db_type = strs.replace(db_reg, "$1");
-                    var db_id = strs.replace(db_reg, "$2").toString();
-                    var db_api = "https://douban.edui.fun/";
-                    if (db_type === 'movie') {
-                        var ls_item = 'movie' + db_id;
-                        var url = db_api + "movies/" + db_id;
-                        if (localStorage.getItem(ls_item) == null || localStorage.getItem(ls_item) === 'undefined') {
-                            $.ajax({
-                                url: url, type: 'GET', dataType: "json", success: function (data) {
-                                    localStorage.setItem(ls_item, JSON.stringify(data));
-                                    movieShow(_this, ls_item, strs)
-                                }
-                            })
-                        } else {
-                            movieShow(_this, ls_item, strs)
-                        }
-                    } else if (db_type === 'book') {
-                        var ls_item = 'book' + db_id;
-                        var url = db_api + "v2/book/id/" + db_id;
-                        if (localStorage.getItem(ls_item) == null || localStorage.getItem(ls_item) === 'undefined') {
-                            $.ajax({
-                                url: url, type: 'GET', dataType: 'json', success: function (data) {
-                                    localStorage.setItem('book' + db_id, JSON.stringify(data));
-                                    bookShow(_this, ls_item, strs)
-                                }
-                            })
-                        } else {
-                            bookShow(_this, ls_item, strs)
-                        }
-                    }
-                }
-            });
-        });
-
-        function movieShow(_this, ls_item, str) {
-            var storage = localStorage.getItem(ls_item);
-            var data = JSON.parse(storage);
-            var db_star = Math.ceil(data.rating);
-            $("<div class='post-preview'><div class='post-preview--meta'><div class='post-preview--middle'><div class='post-preview--title'><a target='_blank' style='box-shadow: none; font-weight: bolder;' href='" + str + "'>" + data.name + "</a></div><div class='rating'><div class='rating-star allstar" + db_star + "'></div><div class='rating-average'>" + data.rating + "</div></div><time class='post-preview--date'>导演：" + data.director + " / 类型：" + data.genre + " / " + data.year + "</time><section style='max-height:75px;overflow:hidden;' class='post-preview--excerpt'>" + data.intro.replace(/\s*/g, "") + "</section></div></div><img referrerpolicy='no-referrer' loading='lazy' class='post-preview--image' src=" + data.img + "></div>").replaceAll(_this)
-        }
-
-        function bookShow(_this, ls_item, str) {
-            var storage = localStorage.getItem(ls_item);
-            var data = JSON.parse(storage);
-            var db_star = Math.ceil(data.rating.average);
-            $("<div class='post-preview'><div class='post-preview--meta'><div class='post-preview--middle'><div class='post-preview--title'><a target='_blank' style='box-shadow: none; font-weight: bolder;' href='" + str + "'>" + data.title + "</a></div><div class='rating'><div class='rating-star allstar" + db_star + "'></div><div class='rating-average'>" + data.rating.average + "</div></div><time class='post-preview--date'>作者：" + data.author + " / 出版："+ data.pubdate +" / "+ data.publisher +" </time><section style='max-height:75px;overflow:hidden;' class='post-preview--excerpt'>" + data.summary.replace(/\s*/g, "") + "</section></div></div><img referrerpolicy='no-referrer' loading='lazy' class='post-preview--image' src=" + data.images.medium + "></div>").replaceAll(_this)
-        }
-    </script>
-</head>
-<body>
-<div class="douban_show">
-    <div id="dbhttps://movie.douban.com/subject/34444648/" urlstring="https://movie.douban.com/subject/34444648/" class="douban_item post-preview"></div>
-</div>
-</body>
-</html>
-
 <p>12月份艺画开天做的《三体》播出了，直到现在被喷的。得益于之前《灵笼》的成功，让大家都挺期待艺画开天的制作的，可事实很难让人满意，好家伙这个评分我惊了。</p>
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-    <title></title>
-    <style>
-        .post-preview {
-            max-width: 780px;
-            height: 200px;
-            margin: 1em auto;
-            position: relative;
-            display: flex;
-             
-            background: var(--entry);
-            border-radius: 15px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, .25), 0 0 2px rgba(0, 0, 0, .25);
-        }
-
-        .dark .post-preview {
-             
-            background: var(--entry);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, .5), 0 0 2px rgba(0, 0, 0, .5);
-        }
-
-        .post-preview--meta {
-            width: 80%;
-            padding: 23px;
-            overflow: hidden;
-        }
-
-        .post-preview--middle {
-            line-height: 28px;
-        }
-
-        .post-preview--title {
-            font-size: 20px;
-            margin: 0 !important;
-        }
-
-        .post-preview--title a {
-            text-decoration: none;
-        }
-
-        .post-preview--date {
-            font-size: 12px;
-            color: #999;
-        }
-
-        .post-preview--excerpt {
-            font-size: 14px;
-            line-height: 1.825;
-        }
-
-        .post-preview--excerpt p {
-            display: hidden;
-            margin: 0;
-			line-height: 1.825;
-        }
-
-        .post-preview--image {
-            height: 200px !important;
-            width: 25% !important;
-            float: right;
-            border-radius: 0 15px 15px 0;
-			margin-top: 0rem !important;
-        }
-
-        .post-preview img {
-            margin: unset;
-            width: 20%;
-            border-radius: 0 15px 15px 0;
-        }
-
-        @media (max-width: 550px) {
-            .post-preview {
-                width: 95%;
-            }
-
-            .post-preview--excerpt {
-                display: none;
-            }
-
-            .post-preview--middle {
-                line-height: 19px;
-            }
-        }
-
-        .rating {
-            display: block;
-            line-height: 15px;
-        }
-
-        .rating-star {
-            display: inline-block;
-            width: 75px;
-            height: 15px;
-            background-repeat: no-repeat;
-            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAClCAYAAAAUAAAYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA5xJREFUeNrs3T9rFEEcxvG7qEQIglaCICKkin9AUEtBKxU7wS61VlYivgWj70TtNFj5BqzE7qxEWwsxKIoYn4UtluFmbm8nczvzm+/BjxyuDwNzu3uXD0+46f7LC5PA45Hm+WTYw1x2LRDc0jzTXB+wqMlsaLPutz8fDFjYZHYauAz3NBvt83XNnyUWNpn1nVm3OsHmsb3EomazzZnVXKMPNcc0xzUnNKc0Rzv/77fms+Z7O3vt9b1eU7bZrNN68l5zcolX4ofmsuZXTdnmMvyi2dR86Bmcac62P6vKrnVubpc0bxYE32nOab45N8YqsvPeDfcD4SOav4HjprPuu+H5BTt9LXDMfNbdLPfT678Fx6vKupt1o/O8+R3pkOaJ5/iktqx7z/qp+aq5q/nY+fczmheaK03Gs7D5rLtZdzSvA6/Ebc2u55j57HQB0TzW7AzkjiKzny6+2hlKNE8juMNcFqKBaIZndRlCNBBNgmx7ZkE0fbLtZkE0EA1EM17WuQwhGogGooFoss6296y52cNO+J6HLJoPaFdbsvA9zGerIxrPh85eWYgGooFoDiQbuAxp0UA0EVmdWbRo+ma1WbRoIBqIZtzsnHdDWjQQDUQD0WSbde5ZS2UhmtqJJtSEiVkXooFoIJre2VATJmZdiKZ2ogk1YSb8oVMvDeUPnSAaiCaPJkzMuhANRAPRQDQpsqEmTMy6EI11oolpwkA0EA1EcyDZmCYMRAPR+LMxTZjqiCamCQPRQDQQzehNGIgGooFoIJpVZ2OaMBBN7USTqgkD0UA0EE3vbKomDERTO9GkasKYJJpUTRiIBqKBaEZvwkA0EA1EA9GkyKZqwkA01olmrCYMRAPRQDR9LkO+0QmiKbAJUyTRjNWEgWggGohm9CYMRAPRQDQQzZDsWE0YiMYC0eTYhIFoIJrKiCbHJgxEY4FocmzCZEs0OTZhIBqIpjKiybEJA9FANBANROPL5tiEgWhKIJoSmzAQDURjjGhKbMJANCUQTYlNmNGIpsQmDEQD0RgjmhKbMBANRAPR1Es0JTZhIJpciMZaEwaigWgKJBprTRiIJheisdaESUo01powEA1EUyDRWGvCQDQQDURjm2isNWEgmlURzWw2q4pZIBqIJkOiCVyGJpkFolkV0ejMMvel28mIRptl7ku3IRqIpjCimfNuaJpZIBqIBqIpm2ice5Z5ZonJupvVkMRu4JW4qXnrOWY++1+AAQBw9BJSCTeN9wAAAABJRU5ErkJggg==);
-            overflow: hidden;
-        }
-
-        .allstar10 {
-            background-position: 0px 0px;
-        }
-
-        .allstar9 {
-            background-position: 0px -15px;
-        }
-
-        .allstar8 {
-            background-position: 0px -30px;
-        }
-
-        .allstar7 {
-            background-position: 0px -45px;
-        }
-
-        .allstar6 {
-            background-position: 0px -60px;
-        }
-
-        .allstar5 {
-            background-position: 0px -75px;
-        }
-
-        .allstar4 {
-            background-position: 0px -90px;
-        }
-
-        .allstar3 {
-            background-position: 0px -105px;
-        }
-
-        .allstar2 {
-            background-position: 0px -120px;
-        }
-
-        .allstar1 {
-            background-position: 0px -135px;
-        }
-
-        .allstar0 {
-            background-position: 0px -150px;
-        }
-
-
-        .rating-average {
-            color: #777;
-            display: inline-block;
-            font-size: 13px;
-            margin-left: 10px;
-        }
-    </style>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.douban_item').each(function () {
-                var _this = $(this);
-                var strs = _this.attr('urlstring').toString();
-                var db_reg = /^https\:\/\/(movie|book)\.douban\.com\/subject\/([0-9]+)\/?/;
-                if (db_reg.test(strs)) {
-                    var db_type = strs.replace(db_reg, "$1");
-                    var db_id = strs.replace(db_reg, "$2").toString();
-                    var db_api = "https://douban.edui.fun/";
-                    if (db_type === 'movie') {
-                        var ls_item = 'movie' + db_id;
-                        var url = db_api + "movies/" + db_id;
-                        if (localStorage.getItem(ls_item) == null || localStorage.getItem(ls_item) === 'undefined') {
-                            $.ajax({
-                                url: url, type: 'GET', dataType: "json", success: function (data) {
-                                    localStorage.setItem(ls_item, JSON.stringify(data));
-                                    movieShow(_this, ls_item, strs)
-                                }
-                            })
-                        } else {
-                            movieShow(_this, ls_item, strs)
-                        }
-                    } else if (db_type === 'book') {
-                        var ls_item = 'book' + db_id;
-                        var url = db_api + "v2/book/id/" + db_id;
-                        if (localStorage.getItem(ls_item) == null || localStorage.getItem(ls_item) === 'undefined') {
-                            $.ajax({
-                                url: url, type: 'GET', dataType: 'json', success: function (data) {
-                                    localStorage.setItem('book' + db_id, JSON.stringify(data));
-                                    bookShow(_this, ls_item, strs)
-                                }
-                            })
-                        } else {
-                            bookShow(_this, ls_item, strs)
-                        }
-                    }
-                }
-            });
-        });
-
-        function movieShow(_this, ls_item, str) {
-            var storage = localStorage.getItem(ls_item);
-            var data = JSON.parse(storage);
-            var db_star = Math.ceil(data.rating);
-            $("<div class='post-preview'><div class='post-preview--meta'><div class='post-preview--middle'><div class='post-preview--title'><a target='_blank' style='box-shadow: none; font-weight: bolder;' href='" + str + "'>" + data.name + "</a></div><div class='rating'><div class='rating-star allstar" + db_star + "'></div><div class='rating-average'>" + data.rating + "</div></div><time class='post-preview--date'>导演：" + data.director + " / 类型：" + data.genre + " / " + data.year + "</time><section style='max-height:75px;overflow:hidden;' class='post-preview--excerpt'>" + data.intro.replace(/\s*/g, "") + "</section></div></div><img referrerpolicy='no-referrer' loading='lazy' class='post-preview--image' src=" + data.img + "></div>").replaceAll(_this)
-        }
-
-        function bookShow(_this, ls_item, str) {
-            var storage = localStorage.getItem(ls_item);
-            var data = JSON.parse(storage);
-            var db_star = Math.ceil(data.rating.average);
-            $("<div class='post-preview'><div class='post-preview--meta'><div class='post-preview--middle'><div class='post-preview--title'><a target='_blank' style='box-shadow: none; font-weight: bolder;' href='" + str + "'>" + data.title + "</a></div><div class='rating'><div class='rating-star allstar" + db_star + "'></div><div class='rating-average'>" + data.rating.average + "</div></div><time class='post-preview--date'>作者：" + data.author + " / 出版："+ data.pubdate +" / "+ data.publisher +" </time><section style='max-height:75px;overflow:hidden;' class='post-preview--excerpt'>" + data.summary.replace(/\s*/g, "") + "</section></div></div><img referrerpolicy='no-referrer' loading='lazy' class='post-preview--image' src=" + data.images.medium + "></div>").replaceAll(_this)
-        }
-    </script>
-</head>
-<body>
-<div class="douban_show">
-    <div id="dbhttps://movie.douban.com/subject/26647087/" urlstring="https://movie.douban.com/subject/26647087/" class="douban_item post-preview"></div>
-</div>
-</body>
-</html>
-
 <p>最近《三体》腾讯版来了，电视剧前几集汪淼面对着倒计时，那些场景氛围刻画，让我很喜欢。没有看过原著，看的时候有很多猜想在不断问看过原著的朋友，被动画打击后朋友暂时不打算看腾讯版的了。</p>
 <p>不过为了能够正常上映，肯定在原著上做了改变删剪。在第五集，汪淼接受了倒计时，还在坚持相信科学，给下一代科普，挺鼓舞人的。（但是难免还是会让我觉得有点刻意渲染向上氛围了。）</p>
-<hr>
 <p>本来在京东上下单了，毛姆的两本书，想着放假能看完，我就奖励自己一个kindle，结果经过漫长等待快递货，快递员把快递乱放还让我等几小时，遂把书退了，直接买了kindle pw5。</p>
 <p>对比大学以前的泡面盖，pw3，在翻页时候没有那么难受了。不过kindle现在退出了中国市场，不能够直接购买正版书籍了，需要曲线使用了。</p>
 <p>这段时间还看了纪录片《但是还有书籍》，是老胡配音的！安利给大家。</p>
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-    <title></title>
-    <style>
-        .post-preview {
-            max-width: 780px;
-            height: 200px;
-            margin: 1em auto;
-            position: relative;
-            display: flex;
-             
-            background: var(--entry);
-            border-radius: 15px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, .25), 0 0 2px rgba(0, 0, 0, .25);
-        }
-
-        .dark .post-preview {
-             
-            background: var(--entry);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, .5), 0 0 2px rgba(0, 0, 0, .5);
-        }
-
-        .post-preview--meta {
-            width: 80%;
-            padding: 23px;
-            overflow: hidden;
-        }
-
-        .post-preview--middle {
-            line-height: 28px;
-        }
-
-        .post-preview--title {
-            font-size: 20px;
-            margin: 0 !important;
-        }
-
-        .post-preview--title a {
-            text-decoration: none;
-        }
-
-        .post-preview--date {
-            font-size: 12px;
-            color: #999;
-        }
-
-        .post-preview--excerpt {
-            font-size: 14px;
-            line-height: 1.825;
-        }
-
-        .post-preview--excerpt p {
-            display: hidden;
-            margin: 0;
-			line-height: 1.825;
-        }
-
-        .post-preview--image {
-            height: 200px !important;
-            width: 25% !important;
-            float: right;
-            border-radius: 0 15px 15px 0;
-			margin-top: 0rem !important;
-        }
-
-        .post-preview img {
-            margin: unset;
-            width: 20%;
-            border-radius: 0 15px 15px 0;
-        }
-
-        @media (max-width: 550px) {
-            .post-preview {
-                width: 95%;
-            }
-
-            .post-preview--excerpt {
-                display: none;
-            }
-
-            .post-preview--middle {
-                line-height: 19px;
-            }
-        }
-
-        .rating {
-            display: block;
-            line-height: 15px;
-        }
-
-        .rating-star {
-            display: inline-block;
-            width: 75px;
-            height: 15px;
-            background-repeat: no-repeat;
-            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAClCAYAAAAUAAAYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA5xJREFUeNrs3T9rFEEcxvG7qEQIglaCICKkin9AUEtBKxU7wS61VlYivgWj70TtNFj5BqzE7qxEWwsxKIoYn4UtluFmbm8nczvzm+/BjxyuDwNzu3uXD0+46f7LC5PA45Hm+WTYw1x2LRDc0jzTXB+wqMlsaLPutz8fDFjYZHYauAz3NBvt83XNnyUWNpn1nVm3OsHmsb3EomazzZnVXKMPNcc0xzUnNKc0Rzv/77fms+Z7O3vt9b1eU7bZrNN68l5zcolX4ofmsuZXTdnmMvyi2dR86Bmcac62P6vKrnVubpc0bxYE32nOab45N8YqsvPeDfcD4SOav4HjprPuu+H5BTt9LXDMfNbdLPfT678Fx6vKupt1o/O8+R3pkOaJ5/iktqx7z/qp+aq5q/nY+fczmheaK03Gs7D5rLtZdzSvA6/Ebc2u55j57HQB0TzW7AzkjiKzny6+2hlKNE8juMNcFqKBaIZndRlCNBBNgmx7ZkE0fbLtZkE0EA1EM17WuQwhGogGooFoss6296y52cNO+J6HLJoPaFdbsvA9zGerIxrPh85eWYgGooFoDiQbuAxp0UA0EVmdWbRo+ma1WbRoIBqIZtzsnHdDWjQQDUQD0WSbde5ZS2UhmtqJJtSEiVkXooFoIJre2VATJmZdiKZ2ogk1YSb8oVMvDeUPnSAaiCaPJkzMuhANRAPRQDQpsqEmTMy6EI11oolpwkA0EA1EcyDZmCYMRAPR+LMxTZjqiCamCQPRQDQQzehNGIgGooFoIJpVZ2OaMBBN7USTqgkD0UA0EE3vbKomDERTO9GkasKYJJpUTRiIBqKBaEZvwkA0EA1EA9GkyKZqwkA01olmrCYMRAPRQDR9LkO+0QmiKbAJUyTRjNWEgWggGohm9CYMRAPRQDQQzZDsWE0YiMYC0eTYhIFoIJrKiCbHJgxEY4FocmzCZEs0OTZhIBqIpjKiybEJA9FANBANROPL5tiEgWhKIJoSmzAQDURjjGhKbMJANCUQTYlNmNGIpsQmDEQD0RgjmhKbMBANRAPR1Es0JTZhIJpciMZaEwaigWgKJBprTRiIJheisdaESUo01powEA1EUyDRWGvCQDQQDURjm2isNWEgmlURzWw2q4pZIBqIJkOiCVyGJpkFolkV0ejMMvel28mIRptl7ku3IRqIpjCimfNuaJpZIBqIBqIpm2ice5Z5ZonJupvVkMRu4JW4qXnrOWY++1+AAQBw9BJSCTeN9wAAAABJRU5ErkJggg==);
-            overflow: hidden;
-        }
-
-        .allstar10 {
-            background-position: 0px 0px;
-        }
-
-        .allstar9 {
-            background-position: 0px -15px;
-        }
-
-        .allstar8 {
-            background-position: 0px -30px;
-        }
-
-        .allstar7 {
-            background-position: 0px -45px;
-        }
-
-        .allstar6 {
-            background-position: 0px -60px;
-        }
-
-        .allstar5 {
-            background-position: 0px -75px;
-        }
-
-        .allstar4 {
-            background-position: 0px -90px;
-        }
-
-        .allstar3 {
-            background-position: 0px -105px;
-        }
-
-        .allstar2 {
-            background-position: 0px -120px;
-        }
-
-        .allstar1 {
-            background-position: 0px -135px;
-        }
-
-        .allstar0 {
-            background-position: 0px -150px;
-        }
-
-
-        .rating-average {
-            color: #777;
-            display: inline-block;
-            font-size: 13px;
-            margin-left: 10px;
-        }
-    </style>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.douban_item').each(function () {
-                var _this = $(this);
-                var strs = _this.attr('urlstring').toString();
-                var db_reg = /^https\:\/\/(movie|book)\.douban\.com\/subject\/([0-9]+)\/?/;
-                if (db_reg.test(strs)) {
-                    var db_type = strs.replace(db_reg, "$1");
-                    var db_id = strs.replace(db_reg, "$2").toString();
-                    var db_api = "https://douban.edui.fun/";
-                    if (db_type === 'movie') {
-                        var ls_item = 'movie' + db_id;
-                        var url = db_api + "movies/" + db_id;
-                        if (localStorage.getItem(ls_item) == null || localStorage.getItem(ls_item) === 'undefined') {
-                            $.ajax({
-                                url: url, type: 'GET', dataType: "json", success: function (data) {
-                                    localStorage.setItem(ls_item, JSON.stringify(data));
-                                    movieShow(_this, ls_item, strs)
-                                }
-                            })
-                        } else {
-                            movieShow(_this, ls_item, strs)
-                        }
-                    } else if (db_type === 'book') {
-                        var ls_item = 'book' + db_id;
-                        var url = db_api + "v2/book/id/" + db_id;
-                        if (localStorage.getItem(ls_item) == null || localStorage.getItem(ls_item) === 'undefined') {
-                            $.ajax({
-                                url: url, type: 'GET', dataType: 'json', success: function (data) {
-                                    localStorage.setItem('book' + db_id, JSON.stringify(data));
-                                    bookShow(_this, ls_item, strs)
-                                }
-                            })
-                        } else {
-                            bookShow(_this, ls_item, strs)
-                        }
-                    }
-                }
-            });
-        });
-
-        function movieShow(_this, ls_item, str) {
-            var storage = localStorage.getItem(ls_item);
-            var data = JSON.parse(storage);
-            var db_star = Math.ceil(data.rating);
-            $("<div class='post-preview'><div class='post-preview--meta'><div class='post-preview--middle'><div class='post-preview--title'><a target='_blank' style='box-shadow: none; font-weight: bolder;' href='" + str + "'>" + data.name + "</a></div><div class='rating'><div class='rating-star allstar" + db_star + "'></div><div class='rating-average'>" + data.rating + "</div></div><time class='post-preview--date'>导演：" + data.director + " / 类型：" + data.genre + " / " + data.year + "</time><section style='max-height:75px;overflow:hidden;' class='post-preview--excerpt'>" + data.intro.replace(/\s*/g, "") + "</section></div></div><img referrerpolicy='no-referrer' loading='lazy' class='post-preview--image' src=" + data.img + "></div>").replaceAll(_this)
-        }
-
-        function bookShow(_this, ls_item, str) {
-            var storage = localStorage.getItem(ls_item);
-            var data = JSON.parse(storage);
-            var db_star = Math.ceil(data.rating.average);
-            $("<div class='post-preview'><div class='post-preview--meta'><div class='post-preview--middle'><div class='post-preview--title'><a target='_blank' style='box-shadow: none; font-weight: bolder;' href='" + str + "'>" + data.title + "</a></div><div class='rating'><div class='rating-star allstar" + db_star + "'></div><div class='rating-average'>" + data.rating.average + "</div></div><time class='post-preview--date'>作者：" + data.author + " / 出版："+ data.pubdate +" / "+ data.publisher +" </time><section style='max-height:75px;overflow:hidden;' class='post-preview--excerpt'>" + data.summary.replace(/\s*/g, "") + "</section></div></div><img referrerpolicy='no-referrer' loading='lazy' class='post-preview--image' src=" + data.images.medium + "></div>").replaceAll(_this)
-        }
-    </script>
-</head>
-<body>
-<div class="douban_show">
-    <div id="dbhttps://movie.douban.com/subject/33418361/" urlstring="https://movie.douban.com/subject/33418361/" class="douban_item post-preview"></div>
-</div>
-</body>
-</html>
-
 <p>希望明年年终总结时，能总结自己用“泡面盖”读了不少书。</p>
 <h2 id="2023年愿景">2023年愿景</h2>
 <p>希望能够收获更多的人生体验，读更多的书，做一个情绪相对稳定的人。</p>
@@ -975,7 +334,13 @@
       <head>
 
 <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
-<div id="waline" class="waline-container"></div></head>
+<div id="waline" class="waline-container"></div>
+<script src="/js/activate-power-mode.js"></script>
+<script>  
+	POWERMODE.colorful = true;
+	POWERMODE.shake = false;
+	document.body.addEventListener('input', POWERMODE);  
+</script></head>
 
 <div id="waline"></div>
 <script type="module">
@@ -1284,12 +649,20 @@
   
       
   
+      
+  
+      
+  
+      
+  
+      
+  
 
   <section class="copyright">
        
-       <a href="https://github.com/shixiaocaia/Hugo-theme-Cactus-mod">Hugo-Cactus </a>|<a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral">又拍云</a> | <a href="https://shixiaocaia.fun/index.xml">RSS </a>| <a href="https://docsify.shixiaocaia.fun/">Docsify </a> | <a href="https://beian.miit.gov.cn/">苏ICP备2022036708号-1 </a><br>
+       <a href="https://github.com/shixiaocaia/Hugo-theme-Cactus-mod">Hugo-Cactus </a>|<a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral">又拍云</a> | <a href="https://shixiaocaia.fun/index.xml">RSS </a>| <a href="https://storeweb.cn/s/1488">虫洞</a> | <a href="https://beian.miit.gov.cn/">苏ICP备2022036708号-1 </a><br>
        <a id="copyright"></a> shixiaocaia · <a id="days"></a> Days ·
-     共书写了41k字 ·  35 篇文章</br><span>
+     共书写了45.3k字 ·  39 篇文章</br><span>
    </section>
 
    <script>

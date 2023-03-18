@@ -11,7 +11,7 @@ comment: true
 >
 > 热爱播客，喜欢捣鼓，希望获得更多的人生体验。
 >
-> [🔖我在读些什么](https://shixiaocaia.fun/books/)，[🎞️我在看些什么](https://shixiaocaia.fun/movies/)，[📝我在记些什么](https://docsify.shixiaocaia.fun/#/)
+> [🔖我在读些什么](https://shixiaocaia.fun/books/)，[🎞️我在看些什么](https://shixiaocaia.fun/movies/)，[📝我在记些什么](https://note.shixiaocaia.fun/#/)
 
 <style>
     #test {
@@ -38,14 +38,15 @@ comment: true
   text: `
   偶尔读书/10/关于我/https:&#47;&#47;shixiaocaia.fun/books&#47
   有时电影/10/关于我/https:&#47;&#47;shixiaocaia.fun/movies&#47
-  天天学习/10/关于我/https:&#47;&#47;docsify.shixiaocaia.fun&#47
+  静静学习/10/关于我/https:&#47;&#47;note.shixiaocaia.fun&#47
+  拜访另一个世界/10/关于我/https:&#47;&#47;storeweb.cn/s/1488
   人生最优体验/8/关于我
-  没怎么运动/8/关于我
+  很少运动/8/关于我
   情绪表达者/7/关于我
-  天天炫饭/8/关于我
   盐纠生/6/关于我
   双人成行/5/game
   坂本龙一/7/是爱好
+  自行车/7/是爱好
   Hello world/8/是爱好
   Cooking/8/是爱好
   谐星聊天会/8/podcast/
@@ -64,7 +65,7 @@ comment: true
 
 正在使用：[Hugo-Cactus](https://github.com/shixiaocaia/Hugo-theme-Cactus-mod)
 
-前后倒腾：Hugo-MEME, Hexo-stellar, [Docsify](https://docsify.shixiaocaia.fun),  [Hexo-Aircloud](https://github.com/shixiaocaia/Hexo-aircloud-mod), [Hugo-Luna](https://github.com/shixiaocaia/Hugo-luna-mod)
+前后倒腾：Hugo-MEME, Hexo-stellar, Docsify,  [Hexo-Aircloud](https://github.com/shixiaocaia/Hexo-aircloud-mod), [Hugo-Luna](https://github.com/shixiaocaia/Hugo-luna-mod), idoc, montaigne
 
 以上为自己修改后的，仅供参考。
 
@@ -76,7 +77,3 @@ comment: true
 > 希望能够更好的控制情绪，不断拓宽自己的技能树。
 >
 > 能够做的更多，把思考反思放在后边。Think less, Do more.
->
-> ---
-
-

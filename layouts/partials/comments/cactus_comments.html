@@ -2,6 +2,12 @@
 {{ if not .Site.IsServer }}
 <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
 <div id="waline" class="waline-container"></div>
+<script src="/js/activate-power-mode.js"></script>
+<script>  
+	POWERMODE.colorful = true;
+	POWERMODE.shake = false;
+	document.body.addEventListener('input', POWERMODE);  
+</script>
 {{- end -}}
 </head>
 {{ if not .Site.IsServer }}

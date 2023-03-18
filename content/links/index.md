@@ -26,15 +26,11 @@ slug: links
 | [Destination](https://blog.chrison.cn/)    |希望所有人，前程似锦、未来可期、寻得良人、共赴白头，祝你也祝我.               |
 | [长街短梦](https://wangyunzi.com/)    |此行山高路远，我只剩口袋玫瑰一片.|
 | [小球飞鱼](https://mantyke.icu/)            | 我们会一起遇见鲸鱼吗？  |
-| [木木木木木](https://immmmm.com/)            | 博客大佬！ |
+| [木木木木木](https://immmmm.com/)            | 神秘人物！ |
+| [小鱼钓狗](https://camellia34.one/) | 曾有十二只白鹭飞过秋天的湖泊. |
+| [呆呆不是槑](http://graugris.icu/) | 梦想是实现旺仔牛奶自由. |
+| [昼河万里](https://tothemoonriver.icu/) | 一起去看月亮吧. |
 
-## 开源社区
-| Title            | Description                                                             |
-|------------------|-------------------------------------------------------------------------|
-|[CS自学指南](https://csdiy.wiki/)| 快乐学习CS|
-|[个站商店](https://storeweb.cn/)| 个人博客收录网站 |
-|[全网漫游指南](https://tagly.notion.site/a333efd8c3e54e12b123acd541e8d3e6)| 探索浩瀚的数字海洋 |
-|[HelloGithub](https://hellogithub.com/)| 拥抱开源 |
 
 ## 我的友链信息
 

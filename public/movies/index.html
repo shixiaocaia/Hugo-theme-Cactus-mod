@@ -8,6 +8,12 @@
   <script type="text/javascript" src="/js/cactus.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="/js/activate-power-mode.js"></script>
+  <script>  
+	POWERMODE.colorful = true;
+	POWERMODE.shake = false;
+	document.body.addEventListener('input', POWERMODE);  
+  </script>
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,7 +39,7 @@
     
   
   
-  <link rel="stylesheet" href="https://shixiaocaia.fun/css/styles.5981a82be0f7c41b87d23a9b98b2cda6d803411694e3e893b30992bee63bab02c8b9008bbc4e84a099f903a5c11e81273718491bc0c078e16163e85d2db62d21.css" integrity="sha512-WYGoK&#43;D3xBuH0jqbmLLNptgDQRaU4&#43;iTswmSvuY7qwLIuQCLvE6EoJn5A6XBHoEnNxhJG8DAeOFhY&#43;hdLbYtIQ=="> 
+  <link rel="stylesheet" href="https://shixiaocaia.fun/css/styles.76b8c4639322d767cc902217bd70ce6bb406de2aa4543fae1266977fb2e6059f4608f7a1e6ae85adc7c3b43ae407dc1280b66e22e7a1152a74d330a4c482b380.css" integrity="sha512-drjEY5Mi12fMkCIXvXDOa7QG3iqkVD&#43;uEmaXf7LmBZ9GCPeh5q6FrcfDtDrkB9wSgLZuIuehFSp00zCkxIKzgA=="> 
 
   
   
@@ -76,7 +82,7 @@
 
 <body class="max-width mx-auto px3 ltr">
   <div class="content index py4">
-
+	
     <header id="header">
   <a href="https://shixiaocaia.fun/">
   
@@ -105,7 +111,6 @@
 
   
 </header>
-
 
 
     
@@ -310,6 +315,14 @@
       
     
   
+    
+      
+    
+  
+    
+      
+    
+  
   <div class="sc-ksluID gFnzgG">
 	<div class="sc-bdnxRM">
       <a href="javascript:void 0;" class="sc-gtsrHT kEoOHR" data-search="genres" data-method="contain" data-value="">全部</a>
@@ -319,6 +332,8 @@
       <a href="javascript:void 0;" class="sc-gtsrHT dvtjjf" data-search="genres" data-method="contain" data-value="电影">电影</a>
       
       <a href="javascript:void 0;" class="sc-gtsrHT dvtjjf" data-search="genres" data-method="contain" data-value="韩剧">韩剧</a>
+      
+      <a href="javascript:void 0;" class="sc-gtsrHT dvtjjf" data-search="genres" data-method="contain" data-value="电视剧">电视剧</a>
       
       <a href="javascript:void 0;" class="sc-gtsrHT dvtjjf" data-search="genres" data-method="contain" data-value="纪录片">纪录片</a>
       
@@ -452,6 +467,26 @@
       
       <div 
         class="sc-gKAaRy dfdORB" 
+        data-year="2023-01-04 16:38:32" 
+        data-star="4"
+        data-rating="8.4"
+        data-genres="电视剧"  
+      >
+        <a rel="link" href="https://movie.douban.com/subject/35275350/" target="_blank">
+          <div class="sc-hKFxyN HPRth">
+            <div class="lazyload-wrapper ">
+              <img class="avatar" src="https://img1.doubanio.com/view/photo/l/public/p2882622250.webp" referrer-policy="no-referrer" loading="lazy" alt="First love" width="150" height="220">
+            </div>
+          </div>
+          <div class="sc-iCoGMd kMthTr">First love</div>
+          
+        </a>
+      </div>
+      
+      
+      
+      <div 
+        class="sc-gKAaRy dfdORB" 
         data-year="2022-01-04 18:40:07" 
         data-star="4"
         data-rating="9.2"
@@ -464,6 +499,26 @@
             </div>
           </div>
           <div class="sc-iCoGMd kMthTr">排球少年 第四季</div>
+          
+        </a>
+      </div>
+      
+      
+      
+      <div 
+        class="sc-gKAaRy dfdORB" 
+        data-year="2022-01-23 18:40:07" 
+        data-star="4"
+        data-rating="8.7"
+        data-genres="动漫"  
+      >
+        <a rel="link" href="https://movie.douban.com/subject/24733428/%20" target="_blank">
+          <div class="sc-hKFxyN HPRth">
+            <div class="lazyload-wrapper ">
+              <img class="avatar" src="https://img2.doubanio.com/view/photo/l/public/p2626464672.webp" referrer-policy="no-referrer" loading="lazy" alt="心灵奇旅" width="150" height="220">
+            </div>
+          </div>
+          <div class="sc-iCoGMd kMthTr">心灵奇旅</div>
           
         </a>
       </div>
@@ -981,12 +1036,20 @@
   
       
   
+      
+  
+      
+  
+      
+  
+      
+  
 
   <section class="copyright">
        
-       <a href="https://github.com/shixiaocaia/Hugo-theme-Cactus-mod">Hugo-Cactus </a>|<a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral">又拍云</a> | <a href="https://shixiaocaia.fun/index.xml">RSS </a>| <a href="https://docsify.shixiaocaia.fun/">Docsify </a> | <a href="https://beian.miit.gov.cn/">苏ICP备2022036708号-1 </a><br>
+       <a href="https://github.com/shixiaocaia/Hugo-theme-Cactus-mod">Hugo-Cactus </a>|<a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral">又拍云</a> | <a href="https://shixiaocaia.fun/index.xml">RSS </a>| <a href="https://storeweb.cn/s/1488">虫洞</a> | <a href="https://beian.miit.gov.cn/">苏ICP备2022036708号-1 </a><br>
        <a id="copyright"></a> shixiaocaia · <a id="days"></a> Days ·
-     共书写了41k字 ·  35 篇文章</br><span>
+     共书写了45.3k字 ·  39 篇文章</br><span>
    </section>
 
    <script>
@@ -1013,14 +1076,11 @@
 </script>
 </footer>
 
-
+  
   </div>
 </body>
 
 <link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
 <script src=/lib/jquery/jquery.min.js></script>
 <script src=/js/main.js></script>
-<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js"defer></script>
-<script src="/js/zoom-image/placeholders.js"defer></script>
-<script src="/js/zoom-image/index.js"defer></script>
 </html>
