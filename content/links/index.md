@@ -27,9 +27,12 @@ slug: links
 | [长街短梦](https://wangyunzi.com/)    |此行山高路远，我只剩口袋玫瑰一片.|
 | [小球飞鱼](https://mantyke.icu/)            | 我们会一起遇见鲸鱼吗？  |
 | [木木木木木](https://immmmm.com/)            | 神秘人物！ |
-| [小鱼钓狗](https://camellia34.one/) | 曾有十二只白鹭飞过秋天的湖泊. |
+| [阿枫\|小鱼钓狗](https://camellia34.one/) |曾有十二只白鹭飞过秋天的湖泊. |
 | [呆呆不是槑](http://graugris.icu/) | 梦想是实现旺仔牛奶自由. |
 | [昼河万里](https://tothemoonriver.icu/) | 一起去看月亮吧. |
+| [wenderfeng](https://wenderfeng.top/)     | step by step.                                                |
+| [AZPLstudio](https://www.azplstudio.top/) | 无极限的追逐热爱！ |
+| [Echo 的小窝](https://www.liveout.cn/) | 漂泊于互联中的一个小窝. |
 
 
 ## 我的友链信息
