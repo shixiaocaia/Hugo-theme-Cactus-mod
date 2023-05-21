@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>倒腾东东 on shixiaocaia</title>
+    <link>https://shixiaocaia.fun/tags/%E5%80%92%E8%85%BE%E4%B8%9C%E4%B8%9C/</link>
+    <description>Recent content in 倒腾东东 on shixiaocaia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>You</copyright>
+    <lastBuildDate>Wed, 05 Oct 2022 09:20:15 +0000</lastBuildDate><atom:link href="https://shixiaocaia.fun/tags/%E5%80%92%E8%85%BE%E4%B8%9C%E4%B8%9C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>与内容农场抗争</title>
+      <link>https://shixiaocaia.fun/posts/8751/</link>
+      <pubDate>Wed, 05 Oct 2022 09:20:15 +0000</pubDate>
+      
+      <guid>https://shixiaocaia.fun/posts/8751/</guid>
+      <description>检索体验 现在互联网很大程度上肆意读取我们的信息，给我们推荐广告，推荐“你喜欢的”，变成最懂你的“人“，NLP等人工智能技术人们研究后，又以这</description>
+    </item>
+    
+    <item>
+      <title>Hexo-Stellar简化 &#43; Docsify搭建</title>
+      <link>https://shixiaocaia.fun/posts/44623/</link>
+      <pubDate>Sun, 25 Sep 2022 23:09:15 +0000</pubDate>
+      
+      <guid>https://shixiaocaia.fun/posts/44623/</guid>
+      <description>Stellar简化 当初从Hugo迁移回Hexo就是看上了stellar主题的wiki的结构，toc目录，一个个框架，看起来特别简洁舒服。 在使</description>
+    </item>
+    
+    <item>
+      <title>Hexo-博客搭建</title>
+      <link>https://shixiaocaia.fun/posts/26102/</link>
+      <pubDate>Tue, 20 Sep 2022 12:45:35 +0000</pubDate>
+      
+      <guid>https://shixiaocaia.fun/posts/26102/</guid>
+      <description>环境配置 vercel部署 选择hexo模板使用vercel一键部署，会在GitHub下创建一个Rep。 本地环境 git init git remote add origin 仓库地址 git pull origin 分支 #</description>
+    </item>
+    
+  </channel>
+</rss>

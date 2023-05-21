@@ -1,4 +1,4 @@
 hugo
-cd upx
-upx.exe sync D:\Code\Hugo-Cactus\public /
-pause
+git add .
+git commit -m"update"
+git push origin main
