@@ -1,4 +1,4 @@
-baseURL = "https://shixiaocaia.fun/"
+baseURL = "https://hugo-theme-cactus-mod-three.vercel.app/"
 languageCode = "en-us"
 title = "shixiaocaia"
 theme = "cactus"
