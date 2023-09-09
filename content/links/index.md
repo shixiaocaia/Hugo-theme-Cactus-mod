@@ -33,7 +33,8 @@ slug: links
 | [wenderfeng](https://wenderfeng.top/)     | step by step.                                                |
 | [AZPLstudio](https://www.azplstudio.top/) | 无极限的追逐热爱！ |
 | [Echo 的小窝](https://www.liveout.cn/) | 漂泊于互联中的一个小窝. |
-
+| [polebug](https://polebug.github.io/) | web3 up. |
+| [柚子屋](https://www.yozll.com/) | 安利我所遇见的美好. |
 
 ## 我的友链信息
 
