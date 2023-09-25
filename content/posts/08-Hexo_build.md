@@ -158,7 +158,7 @@ https://hexo-beta-woad.vercel.app/posts/57513/
 
 最终实现效果：
 
-{% image http://pic.shixiaocaia.fun/202209182301751.png bg:var(--card) padding:16px %}
+[23.9.25记，粗心，不小心把图片弄丢了...]
 
 ## 一些问题
 
